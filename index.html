@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f1e9">
+  <title>Sunshine Invitation — Raka & Alya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="sun">☀</div>
+    <p>Preparing your invitation...</p>
+  </div>
+
+  <section class="cover" id="home">
+    <div class="cover-bg"></div>
+    <div class="cover-overlay"></div>
+    <div class="cover-content">
+      <div class="tiny">THE WEDDING OF</div>
+      <h1>Raka <span>&</span> Alya</h1>
+      <div class="date">12 • 12 • 2026</div>
+      <p>Kepada Yth.<br><strong>Tamu Undangan</strong></p>
+      <button class="open-btn" id="openInvitation">Buka Undangan</button>
+      <small>Scroll untuk melihat undangan</small>
+    </div>
+  </section>
+
+  <main id="mainContent" class="hidden">
+    <nav class="navbar">
+      <a class="brand" href="#home">☀️ <span>SUNSHINE INVITATION</span></a>
+      <div class="navlinks">
+        <a href="#home">Home</a>
+        <a href="#couple">Mempelai</a>
+        <a href="#story">Cerita</a>
+        <a href="#event">Acara</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#rsvp">RSVP</a>
+      </div>
+      <button class="music-btn" id="musicBtn" aria-label="Putar musik">♫</button>
+    </nav>
+
+    <section class="intro section">
+      <div class="eyebrow">A MOMENT TO REMEMBER</div>
+      <h2>Dengan penuh kebahagiaan,<br>kami mengundang Anda.</h2>
+      <p>Untuk menjadi bagian dari hari istimewa ketika dua cerita bertemu dan memulai satu perjalanan baru.</p>
+      <div class="names">Raka Pratama <span>&</span> Alya Putri</div>
+      <div class="big-date">12 DECEMBER 2026</div>
+    </section>
+
+    <section class="couple section" id="couple">
+      <div class="eyebrow">THE COUPLE</div>
+      <h2>Two hearts, one story.</h2>
+      <div class="couple-grid">
+        <article class="person">
+          <div class="portrait"><img src="assets/images/groom.png" alt="Raka Pratama"></div>
+          <h3>Raka Pratama</h3>
+          <p>Putra dari Bapak & Ibu Pratama</p>
+        </article>
+        <div class="amp">&</div>
+        <article class="person">
+          <div class="portrait"><img src="assets/images/bride.png" alt="Alya Putri"></div>
+          <h3>Alya Putri</h3>
+          <p>Putri dari Bapak & Ibu Putri</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="eyebrow">OUR STORY</div>
+      <h2>Dari pertemuan kecil<br>menuju selamanya.</h2>
+      <div class="timeline">
+        <div><b>2019</b><h3>Pertama Bertemu</h3><p>Sebuah pertemuan sederhana yang ternyata menjadi awal dari cerita panjang kami.</p></div>
+        <div><b>2023</b><h3>Memutuskan Bersama</h3><p>Belajar tumbuh, saling mendukung, dan memilih untuk berjalan dalam arah yang sama.</p></div>
+        <div><b>2026</b><h3>Menuju Hari Bahagia</h3><p>Dengan doa keluarga dan orang-orang tercinta, kami memulai babak baru.</p></div>
+      </div>
+    </section>
+
+    <section class="event section" id="event">
+      <div class="eyebrow">SAVE THE DATE</div>
+      <h2>Hari istimewa kami.</h2>
+      <div class="countdown" id="countdown">
+        <div><strong>00</strong><span>Hari</span></div>
+        <div><strong>00</strong><span>Jam</span></div>
+        <div><strong>00</strong><span>Menit</span></div>
+        <div><strong>00</strong><span>Detik</span></div>
+      </div>
+      <div class="event-grid">
+        <article class="event-card">
+          <div class="event-icon">♡</div>
+          <div class="eyebrow">AKAD NIKAH</div>
+          <h3>Sabtu, 12 Desember 2026</h3>
+          <p>08.00 – 10.00 WIB</p>
+          <p>Gedung Sunshine<br>Jl. Contoh Bahagia No. 12, Jakarta</p>
+          <a class="map-btn" href="https://maps.google.com/?q=Gedung+Sunshine+Jakarta" target="_blank" rel="noopener">Buka Google Maps →</a>
+        </article>
+        <article class="event-card">
+          <div class="event-icon">✦</div>
+          <div class="eyebrow">RESEPSI</div>
+          <h3>Sabtu, 12 Desember 2026</h3>
+          <p>11.00 – 14.00 WIB</p>
+          <p>Gedung Sunshine<br>Jl. Contoh Bahagia No. 12, Jakarta</p>
+          <a class="map-btn" href="https://maps.google.com/?q=Gedung+Sunshine+Jakarta" target="_blank" rel="noopener">Lihat Lokasi →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="eyebrow">OUR MOMENTS</div>
+      <h2>Potongan kecil dari cerita kami.</h2>
+      <div class="gallery-grid">
+        <button class="photo p1" type="button" data-full="assets/images/memory-01.png"><img src="assets/images/memory-01.png" alt="Momen 01" loading="lazy"><span>01</span></button>
+        <button class="photo p2" type="button" data-full="assets/images/memory-02.png"><img src="assets/images/memory-02.png" alt="Momen 02" loading="lazy"><span>02</span></button>
+        <button class="photo p3" type="button" data-full="assets/images/memory-03.png"><img src="assets/images/memory-03.png" alt="Momen 03" loading="lazy"><span>03</span></button>
+        <button class="photo p4" type="button" data-full="assets/images/memory-04.png"><img src="assets/images/memory-04.png" alt="Momen 04" loading="lazy"><span>04</span></button>
+        <button class="photo p5" type="button" data-full="assets/images/memory-05.png"><img src="assets/images/memory-05.png" alt="Momen 05" loading="lazy"><span>05</span></button>
+        <button class="photo p6 full-photo" type="button" data-full="assets/images/memory-06.jpg"><img src="assets/images/memory-06.jpg" alt="Momen 06" loading="lazy"><span>06</span></button>
+        <button class="photo p7 full-photo" type="button" data-full="assets/images/memory-07.jpg"><img src="assets/images/memory-07.jpg" alt="Momen 07" loading="lazy"><span>07</span></button>
+      </div>
+    </section>
+
+    <section class="quote section">
+      <div class="quote-mark">“</div>
+      <blockquote>“Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu agar kamu merasa tenteram kepadanya.”</blockquote>
+      <cite>— QS. Ar-Rum: 21</cite>
+    </section>
+
+    <section class="rsvp section" id="rsvp">
+      <div class="eyebrow">RSVP</div>
+      <h2>Kehadiran Anda<br>adalah hadiah bagi kami.</h2>
+      <form id="rsvpForm">
+        <label>Nama<input id="guestName" required placeholder="Nama Anda"></label>
+        <label>Kehadiran<select id="attendance"><option value="Hadir">Hadir</option><option value="Tidak hadir">Tidak hadir</option></select></label>
+        <label>Jumlah tamu<select id="guests"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+        <label>Ucapan<textarea id="message" rows="4" placeholder="Tuliskan ucapan..."></textarea></label>
+        <button type="submit" class="wa-btn">Kirim Konfirmasi via WhatsApp</button>
+      </form>
+    </section>
+
+    <section class="gift section">
+      <div class="eyebrow">WEDDING GIFT</div>
+      <h2>Doa dan kehadiran<br>sudah lebih dari cukup.</h2>
+      <div class="gift-icon">♡</div>
+      <p>Jika Anda ingin memberikan tanda kasih, Anda dapat menghubungi kami melalui WhatsApp untuk informasi hadiah digital.</p>
+      <a class="wa-btn inline" href="https://wa.me/6282262522346" target="_blank" rel="noopener">Hubungi Kami</a>
+    </section>
+
+    <section class="closing">
+      <img src="assets/images/closing.jpg" alt="Raka & Alya">
+      <div class="closing-overlay"></div>
+      <div class="closing-text">
+        <div>☀️</div>
+        <h2>Raka <span>&</span> Alya</h2>
+        <p>Terima kasih telah menjadi bagian dari cerita kami.</p>
+        <small>Modern • Elegant • Simple • Memorable</small>
+      </div>
+    </section>
+
+    <footer>☀️ SUNSHINE INVITATION<br><span>© 2026</span></footer>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <button id="closeLightbox">×</button>
+    <img id="lightboxImg" src="" alt="Foto">
+  </div>
+
+  <audio id="weddingMusic" loop preload="auto">
+    <source src="assets/music/wedding.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
